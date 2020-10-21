@@ -330,9 +330,8 @@ class MyClientProtocol(WebSocketClientProtocol):
         import json
         req.headers = {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",}
-        f=req.post("http://123.57.142.178:1234/updata" ,data=json.dumps({'data':EV}))#123.57.142.178
-        print(f.status_code)
-        # exit()
+
+     
         # print(ODATA)
 
     def sendMessage(self, message):
