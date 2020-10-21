@@ -28,11 +28,11 @@ datagramRecieved = True
 timeout = 30.0 # One second
 
 def proxy(req):
-    tunnel = "tps176.kdlapi.com:15818"
+    tunnel = ".kdlapi.com:15818"
 
     # 用户名密码方式
-    username = "t10143317794250"
-    password = "2jqjjhhy"
+    username = ""
+    password = ""
     proxies = {
         "http": "http://%(user)s:%(pwd)s@%(proxy)s/" % {"user": username, "pwd": password, "proxy": tunnel},
         "https": "http://%(user)s:%(pwd)s@%(proxy)s/" % {"user": username, "pwd": password, "proxy": tunnel}
